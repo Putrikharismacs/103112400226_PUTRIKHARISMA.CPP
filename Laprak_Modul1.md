@@ -118,10 +118,10 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/103112400226_PUTRIKHARISMA.CPP/output/Output-Unguided1-Modul1.png)
+![Screenshot Output Unguided 1_1](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/103112400226_PUTRIKHARISMA.CPP/images/Output-Unguided1-Modul1.png)
 
 ##### Output 2
-![Screenshot Output Unguided 1_2](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/103112400226_PUTRIKHARISMA.CPP/output/Output2-Unguided1-Modul1.png)
+![Screenshot Output Unguided 1_2](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/103112400226_PUTRIKHARISMA.CPP/images/Output2-Unguided1-Modul1.png)
 
 penjelasan unguided 1 yaitu Program ini menerima dua bilangan float lalu menampilkan hasil penjumlahan, pengurangan, perkalian, dan pembagian dengan operator aritmatika dasar.
 
@@ -170,10 +170,10 @@ int main(){
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/103112400226_PUTRIKHARISMA.CPP/output/Output-Uniguided2-Modul1.png)
+![Screenshot Output Unguided 2_1](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/103112400226_PUTRIKHARISMA.CPP/images/Output-Uniguided2-Modul1.png)
 
 ##### Output 2
-![Screenshot Output Unguided 2_2](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/103112400226_PUTRIKHARISMA.CPP/output/Output2-Uniguided2-Modul1.png)
+![Screenshot Output Unguided 2_2](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/103112400226_PUTRIKHARISMA.CPP/images/Output2-Uniguided2-Modul1.png)
 
 penjelasan unguided 2 yaitu Program ini mengubah input angka 0–100 menjadi tulisan bahasa Indonesia dengan percabangan if-else untuk kasus khusus serta pemisahan puluhan dan satuan.
 
@@ -202,10 +202,10 @@ int main() {
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/103112400226_PUTRIKHARISMA.CPP/output/Output-Unguided3-Modul1.png)
+![Screenshot Output Unguided 3_1](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/103112400226_PUTRIKHARISMA.CPP/images/Output-Unguided3-Modul1.png)
 
 ##### Output 2
-![Screenshot Output Unguided 3_2](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/103112400226_PUTRIKHARISMA.CPP/output/Output2-Unguided3-Modul1.png)
+![Screenshot Output Unguided 3_2](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/103112400226_PUTRIKHARISMA.CPP/images/Output2-Unguided3-Modul1.png)
 
 penjelasan unguided 3 yaitu Program ini mencetak segitiga bintang rata kanan dengan perulangan: baris, spasi, dan bintang sesuai tinggi yang dimasukkan.
 
