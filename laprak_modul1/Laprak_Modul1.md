@@ -4,7 +4,7 @@
 ## Dasar Teori
 Pemrograman berorientasi prosedur seperti C++ merupakan dasar penting dalam pembelajaran algoritma dan struktur data. C++ mendukung konsep low-level programming seperti pointer, alokasi memori, serta mendukung implementasi struktur data dinamis seperti linked list, stack, dan queue. IDE (Integrated Development Environment) seperti Code::Blocks digunakan untuk mempermudah pengembangan, karena menyediakan editor, compiler, serta debugger dalam satu kesatuan [1].
 
-### A. Bahasa Pemrograman C++<br/> 
+### A. Bahasa Pemrograman C++<br/>
 Bahasa pemrograman C++ adalah pengembangan dari C yang mendukung paradigma prosedural maupun berorientasi objek. Dengan fitur pointer, C++ dapat digunakan untuk mengimplementasikan struktur data dinamis. Menurut penelitian, C++ masih menjadi bahasa populer untuk pendidikan dasar pemrograman karena sintaksnya dekat dengan sistem dan mudah dihubungkan dengan konsep struktur data [2].
 #### 1. Paradigma Pemrograman
 Prosedural: menyelesaikan masalah melalui fungsi dan prosedur.
@@ -206,7 +206,7 @@ Buatlah program yang dapat memberikan input dan output sbb.
 #include <iostream>
 using namespace std;
 
-int main() {
+int main() { 
     int n;
     cout << "Input: ";
     cin >> n;
