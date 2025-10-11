@@ -254,18 +254,19 @@ nilai: STD
 ```C++
 #ifndef PELAJARAN_H
 #define PELAJARAN_H
+
 #include <iostream>
 using namespace std;
 
-// Deklarasi struktur pelajaran
-struct Pelajaran {
+// Deklarasi struct ADT pelajaran
+struct pelajaran {
     string namaMapel;
     string kodeMapel;
 };
 
-// Deklarasi fungsi
-Pelajaran create_pelajaran(string namaPel, string kodePel);
-void tampil_pelajaran(Pelajaran pel);
+// Deklarasi function & procedure
+pelajaran create_pelajaran(string namaMapel, string kodepel);
+void tampil_pelajaran(pelajaran pel);
 
 #endif
 ```
@@ -274,18 +275,18 @@ void tampil_pelajaran(Pelajaran pel);
 ```C++
 #include "pelajaran.h"
 
-// Fungsi untuk membuat data pelajaran baru
-Pelajaran create_pelajaran(string namaPel, string kodePel) {
-    Pelajaran p;
-    p.namaMapel = namaPel;
-    p.kodeMapel = kodePel;
+// Implementasi function create_pelajaran
+pelajaran create_pelajaran(string namaMapel, string kodepel) {
+    pelajaran p;
+    p.namaMapel = namaMapel;
+    p.kodeMapel = kodepel;
     return p;
 }
 
-// Prosedur untuk menampilkan data pelajaran
-void tampil_pelajaran(Pelajaran pel) {
-    cout << "Nama Mata Pelajaran : " << pel.namaMapel << endl;
-    cout << "Kode Mata Pelajaran : " << pel.kodeMapel << endl;
+// Implementasi procedure tampil_pelajaran
+void tampil_pelajaran(pelajaran pel) {
+    cout << "nama pelajaran : " << pel.namaMapel << endl;
+    cout << "nilai : " << pel.kodeMapel << endl;
 }
 ```
 ### 📄 File: `main.cpp`
@@ -296,18 +297,11 @@ void tampil_pelajaran(Pelajaran pel) {
 using namespace std;
 
 int main() {
-    string nama, kode;
+    string namapel = "Struktur Data";
+    string kodepel = "STD";
 
-    cout << "Masukkan nama mata pelajaran: ";
-    getline(cin, nama);
-    cout << "Masukkan kode mata pelajaran: ";
-    getline(cin, kode);
-
-    // Membuat objek pelajaran menggunakan fungsi ADT
-    Pelajaran p1 = create_pelajaran(nama, kode);
-
-    cout << "\n=== Data Pelajaran ===\n";
-    tampil_pelajaran(p1);
+    pelajaran pel = create_pelajaran(namapel, kodepel);
+    tampil_pelajaran(pel);
 
     return 0;
 }
@@ -321,9 +315,7 @@ int main() {
 ##### Output 2
 ![Screenshot Output Unguided 2_2](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/MODUL3/imagesmodul3/output2_unguided2_modul3.png)
 
-penjelasan unguided 2 yaitu Program ini menerapkan ADT Pelajaran menggunakan tiga file: pelajaran.h, pelajaran.cpp, dan main.cpp.
-Struktur Pelajaran dideklarasikan di header, implementasi fungsinya dipisah di file .cpp, dan penggunaannya dilakukan di main.cpp.
-Hal ini menunjukkan penerapan abstraksi dan enkapsulasi sesuai konsep ADT pada C++.
+penjelasan unguided 2 yaitu Program ini menggunakan **Abstract Data Type (ADT)** bernama `pelajaran` yang terdiri dari dua atribut: `namaMapel` dan `kodeMapel`. Fungsi `create_pelajaran()` digunakan untuk membuat dan mengisi data pelajaran baru, sedangkan prosedur `tampil_pelajaran()` menampilkan data tersebut ke layar. Konsep ini menunjukkan penerapan **pemrograman modular** di C++, di mana deklarasi (header), implementasi (cpp), dan program utama dipisahkan agar kode lebih terstruktur, mudah dibaca, dan dikelola.
 
 ### 3. Soal unguided 3
 

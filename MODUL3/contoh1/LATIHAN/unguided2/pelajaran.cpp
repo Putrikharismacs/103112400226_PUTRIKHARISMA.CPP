@@ -1,15 +1,15 @@
 #include "pelajaran.h"
 
-// Fungsi untuk membuat data pelajaran baru
-Pelajaran create_pelajaran(string namaPel, string kodePel) {
-    Pelajaran p;
-    p.namaMapel = namaPel;
-    p.kodeMapel = kodePel;
+// Implementasi function create_pelajaran
+pelajaran create_pelajaran(string namaMapel, string kodepel) {
+    pelajaran p;
+    p.namaMapel = namaMapel;
+    p.kodeMapel = kodepel;
     return p;
 }
 
-// Prosedur untuk menampilkan data pelajaran
-void tampil_pelajaran(Pelajaran pel) {
-    cout << "Nama Mata Pelajaran : " << pel.namaMapel << endl;
-    cout << "Kode Mata Pelajaran : " << pel.kodeMapel << endl;
+// Implementasi procedure tampil_pelajaran
+void tampil_pelajaran(pelajaran pel) {
+    cout << "nama pelajaran : " << pel.namaMapel << endl;
+    cout << "nilai : " << pel.kodeMapel << endl;
 }
