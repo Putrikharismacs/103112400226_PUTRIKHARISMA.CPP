@@ -334,125 +334,72 @@ Buatlah program dengan ketentuan:
 - fungsi/prosedur yang akan menukarkan isi dari 2 array integer 2D pada posisi tertentu
 - fungsi/prosedur yang akan menukarkan isi dari variabel yang ditunjuk oleh 2 buah pointer
 
-#### 📄 File: `mahasiswa.h`
-
 ```C++
-#ifndef MAHASISWA_H
-#define MAHASISWA_H
 #include <iostream>
 using namespace std;
 
-// Struktur Mahasiswa
-struct Mahasiswa {
-    string nama;
-    string nim;
-    string jurusan;
-    float ipk;
-};
-
-// Deklarasi fungsi-fungsi ADT
-void tambahMahasiswa(Mahasiswa data[], int &n);
-void tampilMahasiswa(Mahasiswa data[], int n);
-void cariMahasiswa(Mahasiswa data[], int n, string cariNIM);
-
-#endif
-```
-
-#### 📄 File: `mahasiswa.cpp`
-
-```C++
-#include "mahasiswa.h"
-
-// Fungsi untuk menambah data mahasiswa
-void tambahMahasiswa(Mahasiswa data[], int &n) {
-    cout << "\nMasukkan data mahasiswa ke-" << n + 1 << endl;
-    cout << "Nama     : ";
-    cin >> ws;
-    getline(cin, data[n].nama);
-    cout << "NIM      : ";
-    getline(cin, data[n].nim);
-    cout << "Jurusan  : ";
-    getline(cin, data[n].jurusan);
-    cout << "IPK      : ";
-    cin >> data[n].ipk;
-    n++;
-}
-
-// Fungsi untuk menampilkan semua data mahasiswa
-void tampilMahasiswa(Mahasiswa data[], int n) {
-    cout << "\n=== Data Mahasiswa ===\n";
-    for (int i = 0; i < n; i++) {
-        cout << i + 1 << ". " << data[i].nama 
-             << " | " << data[i].nim 
-             << " | " << data[i].jurusan 
-             << " | IPK: " << data[i].ipk << endl;
-    }
-}
-
-// Fungsi untuk mencari mahasiswa berdasarkan NIM
-void cariMahasiswa(Mahasiswa data[], int n, string cariNIM) {
-    bool found = false;
-    for (int i = 0; i < n; i++) {
-        if (data[i].nim == cariNIM) {
-            cout << "\nData ditemukan!" << endl;
-            cout << "Nama    : " << data[i].nama << endl;
-            cout << "NIM     : " << data[i].nim << endl;
-            cout << "Jurusan : " << data[i].jurusan << endl;
-            cout << "IPK     : " << data[i].ipk << endl;
-            found = true;
-            break;
+// Fungsi untuk menampilkan isi array 2D
+void tampilArray(int arr[3][3]) {
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << arr[i][j] << " ";
         }
+        cout << endl;
     }
-    if (!found)
-        cout << "Mahasiswa dengan NIM " << cariNIM << " tidak ditemukan.\n";
 }
-```
 
-#### 📄 File: `main.cpp`
+// Fungsi untuk menukar isi 2 array 2D pada posisi tertentu
+void tukarElemen(int arr1[3][3], int arr2[3][3], int baris, int kolom) {
+    int temp = arr1[baris][kolom];
+    arr1[baris][kolom] = arr2[baris][kolom];
+    arr2[baris][kolom] = temp;
+}
 
-```C++
-#include <iostream>
-#include "mahasiswa.h"
-using namespace std;
-
+// Fungsi untuk menukar isi variabel melalui pointer
+void tukarPointer(int *p1, int *p2) {
+    int temp = *p1;
+    *p1 = *p2;
+    *p2 = temp;
+}
 int main() {
-    Mahasiswa data[10];
-    int jumlah = 0;
-    int pilihan;
-    string cari;
+    int A[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
 
-    do {
-        cout << "\n=== MENU DATA MAHASISWA ===" << endl;
-        cout << "1. Tambah Data" << endl;
-        cout << "2. Tampilkan Semua Data" << endl;
-        cout << "3. Cari Mahasiswa Berdasarkan NIM" << endl;
-        cout << "4. Keluar" << endl;
-        cout << "Pilih menu: ";
-        cin >> pilihan;
+    int B[3][3] = {
+        {9, 8, 7},
+        {6, 5, 4},
+        {3, 2, 1}
+    };
 
-        switch (pilihan) {
-            case 1:
-                if (jumlah < 10)
-                    tambahMahasiswa(data, jumlah);
-                else
-                    cout << "Data sudah penuh!" << endl;
-                break;
-            case 2:
-                tampilMahasiswa(data, jumlah);
-                break;
-            case 3:
-                cout << "Masukkan NIM yang ingin dicari: ";
-                cin >> ws;
-                getline(cin, cari);
-                cariMahasiswa(data, jumlah, cari);
-                break;
-            case 4:
-                cout << "Program selesai." << endl;
-                break;
-            default:
-                cout << "Pilihan tidak valid!" << endl;
-        }
-    } while (pilihan != 4);
+    int *ptr1, *ptr2;
+    int x = 10, y = 20;
+
+    cout << "=== Array A ===" << endl;
+    tampilArray(A);
+    cout << "=== Array B ===" << endl;
+    tampilArray(B);
+
+    int baris, kolom;
+    cout << "\nMasukkan baris dan kolom yang ingin ditukar (0-2): ";
+    cin >> baris >> kolom;
+
+    tukarElemen(A, B, baris, kolom);
+
+    cout << "\n=== Setelah Penukaran Elemen ===" << endl;
+    cout << "Array A:" << endl;
+    tampilArray(A);
+    cout << "Array B:" << endl;
+    tampilArray(B);
+
+    ptr1 = &x;
+    ptr2 = &y;
+
+    cout << "\nSebelum tukar pointer: x = " << x << ", y = " << y << endl;
+    tukarPointer(ptr1, ptr2);
+    cout << "Setelah tukar pointer: x = " << x << ", y = " << y << endl;
 
     return 0;
 }
@@ -465,9 +412,7 @@ int main() {
 ##### Output 2
 ![Screenshot Output Unguided 3_2](https://github.com/Putrikharismacs/103112400226_Putri-Kharisma-Cahya-Salsabillah/blob/main/MODUL3/imagesmodul3/output2_unguided3_modul3.png)
 
-penjelasan unguided 3 yaitu Program ini mengimplementasikan ADT Mahasiswa dengan operasi dasar seperti tambah data, tampil data, dan cari data berdasarkan NIM.
-Setiap operasi dibuat sebagai fungsi terpisah dalam file berbeda untuk menerapkan prinsip modularisasi dan information hiding.
-Dengan konsep ADT ini, program menjadi lebih rapi, efisien, dan mudah dikembangkan.
+penjelasan unguided 3 yaitu Program ini menggunakan dua array 2 dimensi berukuran 3x3 dan dua pointer integer untuk mendemonstrasikan konsep dasar pointer dan manipulasi data array. Fungsi tampilArray() menampilkan isi array 2D ke layar, tukarElemen() menukar elemen antara dua array pada posisi baris dan kolom yang ditentukan pengguna, sedangkan tukarPointer() menukar nilai dua variabel melalui pointer. Dengan program ini, kamu bisa melihat bagaimana array dan pointer saling berinteraksi dalam pengelolaan data di memori menggunakan fungsi dan prosedur terpisah.
 
 ## Kesimpulan
 Pada praktikum Modul 3 ini, saya belajar bagaimana konsep Abstract Data Type (ADT) digunakan dalam pemrograman C++ untuk membuat program yang lebih terstruktur dan rapi.
