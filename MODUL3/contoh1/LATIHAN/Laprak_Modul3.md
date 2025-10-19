@@ -11,7 +11,7 @@ Abstract Data Type (ADT) didefinisikan sebagai tipe data yang menyembunyikan det
 Dengan konsep ini, pengguna ADT tidak perlu mengetahui bagaimana data disimpan di memori, tetapi cukup memahami fungsi atau prosedur apa yang tersedia untuk memanipulasi data tersebut.
 Menurut Rahmawati (2022), ADT mempermudah proses pembelajaran struktur data karena mahasiswa dapat fokus pada fungsi logis sebelum memahami struktur internalnya [3].
 
-#### 1. PDefinisi ADT
+#### 1. Definisi ADT
 ADT mendeskripsikan tipe data yang memiliki kumpulan nilai (domain) dan kumpulan operasi yang dapat dilakukan terhadap nilai tersebut tanpa memperlihatkan bagaimana operasi tersebut diimplementasikan [4].
 Sebagai contoh, ADT Stack hanya mendefinisikan operasi push, pop, dan top, tanpa menjelaskan apakah data disimpan dalam array atau linked list.
 
