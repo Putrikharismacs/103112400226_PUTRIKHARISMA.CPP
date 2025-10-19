@@ -573,7 +573,7 @@ Di dalam ADT tersebut, minimal harus terdapat beberapa fungsi berikut :
 
 Output yang diharapkan :
 ```bash
-Isi Linked List : 12 8 9 2
+Isi Linked List : 9 12 8 0 2
 ```
 
 
