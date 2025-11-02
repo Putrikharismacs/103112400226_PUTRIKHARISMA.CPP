@@ -35,7 +35,8 @@ Operasi *CreateList()* digunakan untuk membuat list kosong. Dalam proses ini, po
 
 #### 2. Alokasi dan Dealokasi Node
 * **Alokasi**: Operasi ini membuat node baru di memori secara dinamis menggunakan operator `new` (dalam C++). Node tersebut diisi dengan data yang dimasukkan pengguna, dan pointer `next` serta `prev` diinisialisasi dengan `NULL`.
-   * **Dealokasi**: Operasi ini dilakukan untuk menghapus node dari memori setelah tidak lagi digunakan. Tujuannya adalah untuk menghindari kebocoran memori (*memory leak*). Dalam praktiknya, pointer ke node dihapus menggunakan operator `delete`, dan nilai `next` serta `prev` diatur kembali menjadi `NULL`.
+
+* **Dealokasi**: Operasi ini dilakukan untuk menghapus node dari memori setelah tidak lagi digunakan. Tujuannya adalah untuk menghindari kebocoran memori (*memory leak*). Dalam praktiknya, pointer ke node dihapus menggunakan operator `delete`, dan nilai `next` serta `prev` diatur kembali menjadi `NULL`.
 
 #### 3. Operasi Penyisipan (Insert)
 Doubly Linked List memiliki tiga jenis operasi penyisipan utama, yaitu:
