@@ -28,8 +28,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/C++/Pertemuan2_Modul2",
-      "program": "d:/C++/Pertemuan2_Modul2/build/Debug/outDebug",
+      "cwd": "c:/Users/shiba/Documents/103112400226_PUTRIKHARISMA.CPP/MODUL10",
+      "program": "c:/Users/shiba/Documents/103112400226_PUTRIKHARISMA.CPP/MODUL10/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
